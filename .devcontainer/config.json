@@ -1,12 +1,17 @@
 {
+  "log": {
+    "loglevel": "warning"
+  },
   "inbounds": [
     {
+      "tag": "vless-in",
       "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
-            "id": "ce4ff2ef-0333-420b-9900-62c0dcfd4618"
+            "id": "2166797c-f912-4a24-a467-c5d0c216cc2d",
+            "flow": ""
           }
         ],
         "decryption": "none"
@@ -22,7 +27,9 @@
   ],
   "outbounds": [
     {
-      "protocol": "freedom"
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {}
     }
   ]
 }
